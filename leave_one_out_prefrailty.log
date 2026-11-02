@@ -1,0 +1,599 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+. foreach s of local studies_p {
+  2.     di as result "===== Leave-one-out pre-frailty: exclude `s' ====="
+  3.     metaprop prefrail total if prefrail<. & overlap==0 & study!="`s'", random ftt nograph label(namevar=study)
+  4. }
+===== Leave-one-out pre-frailty: exclude Allavena 2022 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.61
+Iskakova 2026        |      0.27        0.19         0.36    4.90
+Apornpong 2026       |      0.47        0.42         0.53    5.61
+Mbabazi 2026         |      0.45        0.40         0.50    5.66
+Contreras 2025       |      0.48        0.45         0.52    5.82
+Ruderman 2025        |      0.46        0.42         0.50    5.77
+Manyara 2025         |      0.61        0.55         0.68    5.45
+Sharma 2025          |      0.46        0.42         0.49    5.87
+Wiechmann 2024       |      0.51        0.47         0.55    5.80
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.71
+Woldesemayat 2023    |      0.75        0.69         0.81    5.36
+Araujo 2021          |      0.51        0.44         0.58    5.39
+Lellouche 2021       |      0.57        0.50         0.64    5.37
+Kelly 2019           |      0.38        0.35         0.41    5.87
+Hawkins 2018         |      0.49        0.42         0.56    5.39
+Paul 2018            |      0.44        0.36         0.53    5.07
+Petit 2018           |      0.58        0.54         0.62    5.74
+Ding 2017            |      0.28        0.24         0.33    5.63
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.50      0.45         0.55100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     326.23 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     94.79%
+  Estimate of between-study variance Tau^2 =       0.04
+
+  Test of Prevalence=0 : z=      29.34 p =       0.00
+===== Leave-one-out pre-frailty: exclude Apornpong 2026 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.60
+Iskakova 2026        |      0.27        0.19         0.36    4.95
+Mbabazi 2026         |      0.45        0.40         0.50    5.64
+Contreras 2025       |      0.48        0.45         0.52    5.79
+Ruderman 2025        |      0.46        0.42         0.50    5.75
+Manyara 2025         |      0.61        0.55         0.68    5.45
+Sharma 2025          |      0.46        0.42         0.49    5.83
+Wiechmann 2024       |      0.51        0.47         0.55    5.78
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.69
+Woldesemayat 2023    |      0.75        0.69         0.81    5.37
+Allavena 2022        |      0.63        0.59         0.68    5.71
+Araujo 2021          |      0.51        0.44         0.58    5.39
+Lellouche 2021       |      0.57        0.50         0.64    5.38
+Kelly 2019           |      0.38        0.35         0.41    5.84
+Hawkins 2018         |      0.49        0.42         0.56    5.40
+Paul 2018            |      0.44        0.36         0.53    5.10
+Petit 2018           |      0.58        0.54         0.62    5.72
+Ding 2017            |      0.28        0.24         0.33    5.62
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.51      0.46         0.57100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     362.55 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     95.31%
+  Estimate of between-study variance Tau^2 =       0.05
+
+  Test of Prevalence=0 : z=      28.50 p =       0.00
+===== Leave-one-out pre-frailty: exclude Araujo 2021 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.59
+Iskakova 2026        |      0.27        0.19         0.36    4.93
+Apornpong 2026       |      0.47        0.42         0.53    5.59
+Mbabazi 2026         |      0.45        0.40         0.50    5.63
+Contreras 2025       |      0.48        0.45         0.52    5.78
+Ruderman 2025        |      0.46        0.42         0.50    5.74
+Manyara 2025         |      0.61        0.55         0.68    5.44
+Sharma 2025          |      0.46        0.42         0.49    5.83
+Wiechmann 2024       |      0.51        0.47         0.55    5.77
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.68
+Woldesemayat 2023    |      0.75        0.69         0.81    5.35
+Allavena 2022        |      0.63        0.59         0.68    5.70
+Lellouche 2021       |      0.57        0.50         0.64    5.37
+Kelly 2019           |      0.38        0.35         0.41    5.83
+Hawkins 2018         |      0.49        0.42         0.56    5.39
+Paul 2018            |      0.44        0.36         0.53    5.08
+Petit 2018           |      0.58        0.54         0.62    5.71
+Ding 2017            |      0.28        0.24         0.33    5.61
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.51      0.46         0.56100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     363.40 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     95.32%
+  Estimate of between-study variance Tau^2 =       0.05
+
+  Test of Prevalence=0 : z=      28.68 p =       0.00
+===== Leave-one-out pre-frailty: exclude Contreras 2025 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.61
+Iskakova 2026        |      0.27        0.19         0.36    4.98
+Apornpong 2026       |      0.47        0.42         0.53    5.61
+Mbabazi 2026         |      0.45        0.40         0.50    5.65
+Ruderman 2025        |      0.46        0.42         0.50    5.75
+Manyara 2025         |      0.61        0.55         0.68    5.47
+Sharma 2025          |      0.46        0.42         0.49    5.83
+Wiechmann 2024       |      0.51        0.47         0.55    5.78
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.69
+Woldesemayat 2023    |      0.75        0.69         0.81    5.39
+Allavena 2022        |      0.63        0.59         0.68    5.71
+Araujo 2021          |      0.51        0.44         0.58    5.41
+Lellouche 2021       |      0.57        0.50         0.64    5.40
+Kelly 2019           |      0.38        0.35         0.41    5.83
+Hawkins 2018         |      0.49        0.42         0.56    5.42
+Paul 2018            |      0.44        0.36         0.53    5.13
+Petit 2018           |      0.58        0.54         0.62    5.72
+Ding 2017            |      0.28        0.24         0.33    5.63
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.51      0.46         0.57100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     362.83 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     95.31%
+  Estimate of between-study variance Tau^2 =       0.05
+
+  Test of Prevalence=0 : z=      27.70 p =       0.00
+===== Leave-one-out pre-frailty: exclude Ding 2017 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.61
+Iskakova 2026        |      0.27        0.19         0.36    4.82
+Apornpong 2026       |      0.47        0.42         0.53    5.61
+Mbabazi 2026         |      0.45        0.40         0.50    5.66
+Contreras 2025       |      0.48        0.45         0.52    5.85
+Ruderman 2025        |      0.46        0.42         0.50    5.79
+Manyara 2025         |      0.61        0.55         0.68    5.43
+Sharma 2025          |      0.46        0.42         0.49    5.90
+Wiechmann 2024       |      0.51        0.47         0.55    5.83
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.72
+Woldesemayat 2023    |      0.75        0.69         0.81    5.32
+Allavena 2022        |      0.63        0.59         0.68    5.74
+Araujo 2021          |      0.51        0.44         0.58    5.36
+Lellouche 2021       |      0.57        0.50         0.64    5.34
+Kelly 2019           |      0.38        0.35         0.41    5.90
+Hawkins 2018         |      0.49        0.42         0.56    5.36
+Paul 2018            |      0.44        0.36         0.53    5.00
+Petit 2018           |      0.58        0.54         0.62    5.76
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.52      0.48         0.57100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     290.87 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     94.16%
+  Estimate of between-study variance Tau^2 =       0.04
+
+  Test of Prevalence=0 : z=      32.16 p =       0.00
+===== Leave-one-out pre-frailty: exclude Hawkins 2018 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.59
+Iskakova 2026        |      0.27        0.19         0.36    4.93
+Apornpong 2026       |      0.47        0.42         0.53    5.59
+Mbabazi 2026         |      0.45        0.40         0.50    5.63
+Contreras 2025       |      0.48        0.45         0.52    5.78
+Ruderman 2025        |      0.46        0.42         0.50    5.74
+Manyara 2025         |      0.61        0.55         0.68    5.44
+Sharma 2025          |      0.46        0.42         0.49    5.83
+Wiechmann 2024       |      0.51        0.47         0.55    5.77
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.68
+Woldesemayat 2023    |      0.75        0.69         0.81    5.35
+Allavena 2022        |      0.63        0.59         0.68    5.70
+Araujo 2021          |      0.51        0.44         0.58    5.38
+Lellouche 2021       |      0.57        0.50         0.64    5.37
+Kelly 2019           |      0.38        0.35         0.41    5.83
+Paul 2018            |      0.44        0.36         0.53    5.08
+Petit 2018           |      0.58        0.54         0.62    5.71
+Ding 2017            |      0.28        0.24         0.33    5.61
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.51      0.46         0.56100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     363.37 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     95.32%
+  Estimate of between-study variance Tau^2 =       0.05
+
+  Test of Prevalence=0 : z=      28.71 p =       0.00
+===== Leave-one-out pre-frailty: exclude Iskakova 2026 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.56
+Apornpong 2026       |      0.47        0.42         0.53    5.56
+Mbabazi 2026         |      0.45        0.40         0.50    5.61
+Contreras 2025       |      0.48        0.45         0.52    5.77
+Ruderman 2025        |      0.46        0.42         0.50    5.73
+Manyara 2025         |      0.61        0.55         0.68    5.40
+Sharma 2025          |      0.46        0.42         0.49    5.82
+Wiechmann 2024       |      0.51        0.47         0.55    5.76
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.66
+Woldesemayat 2023    |      0.75        0.69         0.81    5.31
+Allavena 2022        |      0.63        0.59         0.68    5.68
+Araujo 2021          |      0.51        0.44         0.58    5.34
+Lellouche 2021       |      0.57        0.50         0.64    5.33
+Kelly 2019           |      0.38        0.35         0.41    5.82
+Hawkins 2018         |      0.49        0.42         0.56    5.35
+Paul 2018            |      0.44        0.36         0.53    5.03
+Petit 2018           |      0.58        0.54         0.62    5.69
+Ding 2017            |      0.28        0.24         0.33    5.59
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.52      0.47         0.57100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     341.02 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     95.01%
+  Estimate of between-study variance Tau^2 =       0.04
+
+  Test of Prevalence=0 : z=      30.36 p =       0.00
+===== Leave-one-out pre-frailty: exclude Kelly 2019 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.62
+Iskakova 2026        |      0.27        0.19         0.36    4.90
+Apornpong 2026       |      0.47        0.42         0.53    5.62
+Mbabazi 2026         |      0.45        0.40         0.50    5.66
+Contreras 2025       |      0.48        0.45         0.52    5.83
+Ruderman 2025        |      0.46        0.42         0.50    5.78
+Manyara 2025         |      0.61        0.55         0.68    5.46
+Sharma 2025          |      0.46        0.42         0.49    5.88
+Wiechmann 2024       |      0.51        0.47         0.55    5.81
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.72
+Woldesemayat 2023    |      0.75        0.69         0.81    5.36
+Allavena 2022        |      0.63        0.59         0.68    5.74
+Araujo 2021          |      0.51        0.44         0.58    5.39
+Lellouche 2021       |      0.57        0.50         0.64    5.38
+Hawkins 2018         |      0.49        0.42         0.56    5.40
+Paul 2018            |      0.44        0.36         0.53    5.07
+Petit 2018           |      0.58        0.54         0.62    5.75
+Ding 2017            |      0.28        0.24         0.33    5.64
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.52      0.47         0.57100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     301.35 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     94.36%
+  Estimate of between-study variance Tau^2 =       0.04
+
+  Test of Prevalence=0 : z=      30.06 p =       0.00
+===== Leave-one-out pre-frailty: exclude Lellouche 2021 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.59
+Iskakova 2026        |      0.27        0.19         0.36    4.92
+Apornpong 2026       |      0.47        0.42         0.53    5.59
+Mbabazi 2026         |      0.45        0.40         0.50    5.63
+Contreras 2025       |      0.48        0.45         0.52    5.78
+Ruderman 2025        |      0.46        0.42         0.50    5.74
+Manyara 2025         |      0.61        0.55         0.68    5.44
+Sharma 2025          |      0.46        0.42         0.49    5.83
+Wiechmann 2024       |      0.51        0.47         0.55    5.77
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.68
+Woldesemayat 2023    |      0.75        0.69         0.81    5.35
+Allavena 2022        |      0.63        0.59         0.68    5.70
+Araujo 2021          |      0.51        0.44         0.58    5.38
+Kelly 2019           |      0.38        0.35         0.41    5.83
+Hawkins 2018         |      0.49        0.42         0.56    5.38
+Paul 2018            |      0.44        0.36         0.53    5.08
+Petit 2018           |      0.58        0.54         0.62    5.71
+Ding 2017            |      0.28        0.24         0.33    5.61
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.51      0.46         0.56100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     359.10 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     95.27%
+  Estimate of between-study variance Tau^2 =       0.05
+
+  Test of Prevalence=0 : z=      28.73 p =       0.00
+===== Leave-one-out pre-frailty: exclude Manyara 2025 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.59
+Iskakova 2026        |      0.27        0.19         0.36    4.91
+Apornpong 2026       |      0.47        0.42         0.53    5.59
+Mbabazi 2026         |      0.45        0.40         0.50    5.64
+Contreras 2025       |      0.48        0.45         0.52    5.79
+Ruderman 2025        |      0.46        0.42         0.50    5.75
+Sharma 2025          |      0.46        0.42         0.49    5.84
+Wiechmann 2024       |      0.51        0.47         0.55    5.78
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.68
+Woldesemayat 2023    |      0.75        0.69         0.81    5.35
+Allavena 2022        |      0.63        0.59         0.68    5.70
+Araujo 2021          |      0.51        0.44         0.58    5.38
+Lellouche 2021       |      0.57        0.50         0.64    5.36
+Kelly 2019           |      0.38        0.35         0.41    5.84
+Hawkins 2018         |      0.49        0.42         0.56    5.38
+Paul 2018            |      0.44        0.36         0.53    5.07
+Petit 2018           |      0.58        0.54         0.62    5.72
+Ding 2017            |      0.28        0.24         0.33    5.61
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.51      0.45         0.56100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     350.99 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     95.16%
+  Estimate of between-study variance Tau^2 =       0.05
+
+  Test of Prevalence=0 : z=      28.89 p =       0.00
+===== Leave-one-out pre-frailty: exclude Mbabazi 2026 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.60
+Iskakova 2026        |      0.27        0.19         0.36    4.95
+Apornpong 2026       |      0.47        0.42         0.53    5.60
+Contreras 2025       |      0.48        0.45         0.52    5.79
+Ruderman 2025        |      0.46        0.42         0.50    5.75
+Manyara 2025         |      0.61        0.55         0.68    5.46
+Sharma 2025          |      0.46        0.42         0.49    5.84
+Wiechmann 2024       |      0.51        0.47         0.55    5.78
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.69
+Woldesemayat 2023    |      0.75        0.69         0.81    5.37
+Allavena 2022        |      0.63        0.59         0.68    5.71
+Araujo 2021          |      0.51        0.44         0.58    5.40
+Lellouche 2021       |      0.57        0.50         0.64    5.38
+Kelly 2019           |      0.38        0.35         0.41    5.84
+Hawkins 2018         |      0.49        0.42         0.56    5.40
+Paul 2018            |      0.44        0.36         0.53    5.10
+Petit 2018           |      0.58        0.54         0.62    5.72
+Ding 2017            |      0.28        0.24         0.33    5.62
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.51      0.46         0.57100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     360.24 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     95.28%
+  Estimate of between-study variance Tau^2 =       0.05
+
+  Test of Prevalence=0 : z=      28.53 p =       0.00
+===== Leave-one-out pre-frailty: exclude Nakamura 2026 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Iskakova 2026        |      0.27        0.19         0.36    4.85
+Apornpong 2026       |      0.47        0.42         0.53    5.61
+Mbabazi 2026         |      0.45        0.40         0.50    5.66
+Contreras 2025       |      0.48        0.45         0.52    5.83
+Ruderman 2025        |      0.46        0.42         0.50    5.78
+Manyara 2025         |      0.61        0.55         0.68    5.43
+Sharma 2025          |      0.46        0.42         0.49    5.88
+Wiechmann 2024       |      0.51        0.47         0.55    5.82
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.71
+Woldesemayat 2023    |      0.75        0.69         0.81    5.33
+Allavena 2022        |      0.63        0.59         0.68    5.73
+Araujo 2021          |      0.51        0.44         0.58    5.36
+Lellouche 2021       |      0.57        0.50         0.64    5.35
+Kelly 2019           |      0.38        0.35         0.41    5.89
+Hawkins 2018         |      0.49        0.42         0.56    5.37
+Paul 2018            |      0.44        0.36         0.53    5.02
+Petit 2018           |      0.58        0.54         0.62    5.75
+Ding 2017            |      0.28        0.24         0.33    5.63
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.50      0.45         0.55100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     306.41 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     94.45%
+  Estimate of between-study variance Tau^2 =       0.04
+
+  Test of Prevalence=0 : z=      30.42 p =       0.00
+===== Leave-one-out pre-frailty: exclude Paul 2018 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.57
+Iskakova 2026        |      0.27        0.19         0.36    4.90
+Apornpong 2026       |      0.47        0.42         0.53    5.57
+Mbabazi 2026         |      0.45        0.40         0.50    5.62
+Contreras 2025       |      0.48        0.45         0.52    5.77
+Ruderman 2025        |      0.46        0.42         0.50    5.72
+Manyara 2025         |      0.61        0.55         0.68    5.42
+Sharma 2025          |      0.46        0.42         0.49    5.81
+Wiechmann 2024       |      0.51        0.47         0.55    5.75
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.66
+Woldesemayat 2023    |      0.75        0.69         0.81    5.33
+Allavena 2022        |      0.63        0.59         0.68    5.68
+Araujo 2021          |      0.51        0.44         0.58    5.36
+Lellouche 2021       |      0.57        0.50         0.64    5.35
+Kelly 2019           |      0.38        0.35         0.41    5.81
+Hawkins 2018         |      0.49        0.42         0.56    5.37
+Petit 2018           |      0.58        0.54         0.62    5.70
+Ding 2017            |      0.28        0.24         0.33    5.59
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.51      0.46         0.57100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     361.94 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     95.30%
+  Estimate of between-study variance Tau^2 =       0.05
+
+  Test of Prevalence=0 : z=      29.07 p =       0.00
+===== Leave-one-out pre-frailty: exclude Petit 2018 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.61
+Iskakova 2026        |      0.27        0.19         0.36    4.94
+Apornpong 2026       |      0.47        0.42         0.53    5.61
+Mbabazi 2026         |      0.45        0.40         0.50    5.65
+Contreras 2025       |      0.48        0.45         0.52    5.80
+Ruderman 2025        |      0.46        0.42         0.50    5.76
+Manyara 2025         |      0.61        0.55         0.68    5.46
+Sharma 2025          |      0.46        0.42         0.49    5.84
+Wiechmann 2024       |      0.51        0.47         0.55    5.79
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.70
+Woldesemayat 2023    |      0.75        0.69         0.81    5.37
+Allavena 2022        |      0.63        0.59         0.68    5.72
+Araujo 2021          |      0.51        0.44         0.58    5.40
+Lellouche 2021       |      0.57        0.50         0.64    5.38
+Kelly 2019           |      0.38        0.35         0.41    5.85
+Hawkins 2018         |      0.49        0.42         0.56    5.40
+Paul 2018            |      0.44        0.36         0.53    5.10
+Ding 2017            |      0.28        0.24         0.33    5.63
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.51      0.45         0.56100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     349.23 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     95.13%
+  Estimate of between-study variance Tau^2 =       0.05
+
+  Test of Prevalence=0 : z=      28.44 p =       0.00
+===== Leave-one-out pre-frailty: exclude Ruderman 2025 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.61
+Iskakova 2026        |      0.27        0.19         0.36    4.97
+Apornpong 2026       |      0.47        0.42         0.53    5.61
+Mbabazi 2026         |      0.45        0.40         0.50    5.65
+Contreras 2025       |      0.48        0.45         0.52    5.79
+Manyara 2025         |      0.61        0.55         0.68    5.46
+Sharma 2025          |      0.46        0.42         0.49    5.83
+Wiechmann 2024       |      0.51        0.47         0.55    5.78
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.69
+Woldesemayat 2023    |      0.75        0.69         0.81    5.38
+Allavena 2022        |      0.63        0.59         0.68    5.71
+Araujo 2021          |      0.51        0.44         0.58    5.41
+Lellouche 2021       |      0.57        0.50         0.64    5.39
+Kelly 2019           |      0.38        0.35         0.41    5.84
+Hawkins 2018         |      0.49        0.42         0.56    5.41
+Paul 2018            |      0.44        0.36         0.53    5.12
+Petit 2018           |      0.58        0.54         0.62    5.72
+Ding 2017            |      0.28        0.24         0.33    5.63
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.51      0.46         0.57100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     360.45 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     95.28%
+  Estimate of between-study variance Tau^2 =       0.05
+
+  Test of Prevalence=0 : z=      28.11 p =       0.00
+===== Leave-one-out pre-frailty: exclude Sharma 2025 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.61
+Iskakova 2026        |      0.27        0.19         0.36    4.99
+Apornpong 2026       |      0.47        0.42         0.53    5.61
+Mbabazi 2026         |      0.45        0.40         0.50    5.65
+Contreras 2025       |      0.48        0.45         0.52    5.79
+Ruderman 2025        |      0.46        0.42         0.50    5.75
+Manyara 2025         |      0.61        0.55         0.68    5.47
+Wiechmann 2024       |      0.51        0.47         0.55    5.78
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.69
+Woldesemayat 2023    |      0.75        0.69         0.81    5.39
+Allavena 2022        |      0.63        0.59         0.68    5.71
+Araujo 2021          |      0.51        0.44         0.58    5.42
+Lellouche 2021       |      0.57        0.50         0.64    5.40
+Kelly 2019           |      0.38        0.35         0.41    5.83
+Hawkins 2018         |      0.49        0.42         0.56    5.42
+Paul 2018            |      0.44        0.36         0.53    5.14
+Petit 2018           |      0.58        0.54         0.62    5.72
+Ding 2017            |      0.28        0.24         0.33    5.63
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.51      0.46         0.57100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     355.06 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     95.21%
+  Estimate of between-study variance Tau^2 =       0.05
+
+  Test of Prevalence=0 : z=      27.60 p =       0.00
+===== Leave-one-out pre-frailty: exclude Wiechmann 2024 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.61
+Iskakova 2026        |      0.27        0.19         0.36    4.98
+Apornpong 2026       |      0.47        0.42         0.53    5.61
+Mbabazi 2026         |      0.45        0.40         0.50    5.65
+Contreras 2025       |      0.48        0.45         0.52    5.79
+Ruderman 2025        |      0.46        0.42         0.50    5.75
+Manyara 2025         |      0.61        0.55         0.68    5.47
+Sharma 2025          |      0.46        0.42         0.49    5.83
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.69
+Woldesemayat 2023    |      0.75        0.69         0.81    5.38
+Allavena 2022        |      0.63        0.59         0.68    5.71
+Araujo 2021          |      0.51        0.44         0.58    5.41
+Lellouche 2021       |      0.57        0.50         0.64    5.40
+Kelly 2019           |      0.38        0.35         0.41    5.83
+Hawkins 2018         |      0.49        0.42         0.56    5.42
+Paul 2018            |      0.44        0.36         0.53    5.13
+Petit 2018           |      0.58        0.54         0.62    5.72
+Ding 2017            |      0.28        0.24         0.33    5.63
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.51      0.46         0.57100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     363.23 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     95.32%
+  Estimate of between-study variance Tau^2 =       0.05
+
+  Test of Prevalence=0 : z=      27.74 p =       0.00
+===== Leave-one-out pre-frailty: exclude Woldesemayat 2023 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.59
+Iskakova 2026        |      0.27        0.19         0.36    4.83
+Apornpong 2026       |      0.47        0.42         0.53    5.59
+Mbabazi 2026         |      0.45        0.40         0.50    5.64
+Contreras 2025       |      0.48        0.45         0.52    5.82
+Ruderman 2025        |      0.46        0.42         0.50    5.77
+Manyara 2025         |      0.61        0.55         0.68    5.42
+Sharma 2025          |      0.46        0.42         0.49    5.87
+Wiechmann 2024       |      0.51        0.47         0.55    5.80
+Zhabokritsky 2024    |      0.62        0.58         0.67    5.70
+Allavena 2022        |      0.63        0.59         0.68    5.72
+Araujo 2021          |      0.51        0.44         0.58    5.35
+Lellouche 2021       |      0.57        0.50         0.64    5.33
+Kelly 2019           |      0.38        0.35         0.41    5.87
+Hawkins 2018         |      0.49        0.42         0.56    5.35
+Paul 2018            |      0.44        0.36         0.53    5.01
+Petit 2018           |      0.58        0.54         0.62    5.73
+Ding 2017            |      0.28        0.24         0.33    5.61
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.50      0.45         0.55100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     308.92 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     94.50%
+  Estimate of between-study variance Tau^2 =       0.04
+
+  Test of Prevalence=0 : z=      30.53 p =       0.00
+===== Leave-one-out pre-frailty: exclude Zhabokritsky 2024 =====
+
+           Study     |     Prevalence[95% Conf. Interval] % Weight
+---------------------+---------------------------------------------------
+Nakamura 2026        |      0.70        0.65         0.75    5.61
+Iskakova 2026        |      0.27        0.19         0.36    4.91
+Apornpong 2026       |      0.47        0.42         0.53    5.61
+Mbabazi 2026         |      0.45        0.40         0.50    5.65
+Contreras 2025       |      0.48        0.45         0.52    5.81
+Ruderman 2025        |      0.46        0.42         0.50    5.77
+Manyara 2025         |      0.61        0.55         0.68    5.45
+Sharma 2025          |      0.46        0.42         0.49    5.86
+Wiechmann 2024       |      0.51        0.47         0.55    5.80
+Woldesemayat 2023    |      0.75        0.69         0.81    5.36
+Allavena 2022        |      0.63        0.59         0.68    5.72
+Araujo 2021          |      0.51        0.44         0.58    5.39
+Lellouche 2021       |      0.57        0.50         0.64    5.37
+Kelly 2019           |      0.38        0.35         0.41    5.86
+Hawkins 2018         |      0.49        0.42         0.56    5.39
+Paul 2018            |      0.44        0.36         0.53    5.08
+Petit 2018           |      0.58        0.54         0.62    5.74
+Ding 2017            |      0.28        0.24         0.33    5.63
+---------------------+---------------------------------------------------
+Random pooled  Prevalence|      0.50      0.45         0.56100.00
+---------------------+---------------------------------------------------
+
+  Heterogeneity chi^2 =     333.57 (d.f. = 17) p =       0.00
+  I^2 (variation in Prevalence attributable to heterogeneity) =     94.90%
+  Estimate of between-study variance Tau^2 =       0.05
+
+  Test of Prevalence=0 : z=      29.11 p =       0.00
+
+. log close loolog
+ closed on:   2 Nov 2026, 01:29:53
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
